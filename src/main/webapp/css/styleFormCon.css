@@ -1,0 +1,41 @@
+.TongThe{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.btnThem{
+	position: absolute;
+	right: 100px;
+	top: 5px;
+	display: block;
+	height: 50px;
+	width: 150px;
+	background-color: #CCFFFF;
+	border-bottom-left-radius: 50px 20px;
+	border-top-right-radius: 50px 20px;
+	cursor: pointer;
+}
+.btnXoa{
+	margin-left: 10px;
+}
+
+.btnSuaXoa{
+	text-align: center; 
+	width: 100px;
+}

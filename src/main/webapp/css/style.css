@@ -1,0 +1,103 @@
+.header{
+	background-color: #0033CC;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+}
+
+.header h3{
+	color: #ffffff;
+	font-size: 30px;
+	position: fixed;
+	height: 0px;
+	top: 0px;	
+	left: 10px;
+}
+
+.header h5{
+	color: #ffffff;
+	position: absolute;
+	height: 0;
+	bottom: 0;
+	left: 70px;
+	font-size: 20px;
+}
+
+.header .dangxuat{
+	position: absolute;
+	right: 0;
+	top: 45%;
+}
+
+.header .dangxuat a{
+	color: #ffffff;
+	display: inline-flex;
+	margin-left: 100px;
+	margin-right: 20px;
+	margin-top: 1px;
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+.header .dangxuat a img{
+	display: flex;
+	width: 50px;
+	height: 50px;
+	margin-top: -15px;
+	margin-right: 1px;
+}
+/*--------------------------------------------DANH MỤC CHỨC NĂNG--------------------------*/
+.sidenav {
+	height: 80%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 100px;
+	left: 0;
+	background-color: #888888;
+	padding-top: 20px;
+  }
+  
+  .sidenav a {
+	padding: 15px 6px 6px 5px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000000;
+	display: block;
+	border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .sidenav a:hover {
+	color: #FFFFFF;
+  }
+  
+  .main {
+	position: fixed;
+	top: 100px;
+	margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  /*--------------------------------FORM TƯƠNG ỨNG VỚI DANH MỤC CHỨC NĂNG-----------------------------------------*/
+.form{
+	position: fixed;
+	top: 100px;
+	left: 200px;
+}
+  
+  /*----------------------------------------RESPONSIVE-----------------------------------*/
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {overflow: scroll;padding-top: 15px; height: 80%;}
+	.sidenav a {font-size: 18px;}
+  }
+  @media screen and (max-width: 830px){
+    .header .dangxuat a img{display: none;}
+	.header .dangxuat a {margin-left: 0;}
+	.sidenav{ width: 20%; }
+	.sidenav a{font-size: 10px;}
+	.form{left: 20%; width: 80%;}  
+	.header .h3{font-size: 10px;}
+	.header .h5{font-size: 10px}
+}
